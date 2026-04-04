@@ -1,0 +1,23 @@
+Terrain plans 
+
+Terrain - type 
+
+Terrain has classes 
+
+	Worship(maybe not based on terrain)
+
+
+	Kindred (people loyal to the cult)
+	Substance (raw material)
+
+	Terrain score (how difficult the tile is to fight in)
+
+
+Subclasses 
+
+
+	heavy forest 
+		 stats
+			Ancient wood (used for ritual)
+			Terrain score 
+			

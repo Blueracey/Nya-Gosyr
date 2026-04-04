@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Nia-Gosyr"
+run/main_scene="uid://cp8lgjoc0jswa"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*uid://c4rta68id78e"
+MapFunctions="*uid://co3nn1hxcdyns"
+
+[display]
+
+window/size/viewport_width=256
+window/size/viewport_height=160
+window/size/window_width_override=1024
+window/size/window_height_override=640
+window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="New Game Project"
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

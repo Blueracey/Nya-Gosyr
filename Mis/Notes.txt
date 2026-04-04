@@ -1,0 +1,11 @@
+https://www.peanuts-code.com/en/tutorials/gd0010_2d_grid_based_movement/ 
+
+https://www.peanuts-code.com/en/tutorials/gd0024_tilemaplayer/#importing-assets-for-tiles
+
+
+
+https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html 
+
+
+
+When interating through a map layeer gadot goes top left down not left to right 
