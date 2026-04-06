@@ -5,9 +5,9 @@ extends Node
 func _ready():
 	print("ran")
 	
-	GameState.buildMap($TileMapPOI, 1)
-	GameState.buildMap($TileMapGround, 0)
-	
+	var map0 = GameState.buildMap($TileMapPOI, 1)
+	var map1 = GameState.buildMap($TileMapGround, 0)
+	GameState.combineMap(map0,map1)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

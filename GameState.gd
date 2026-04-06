@@ -11,15 +11,24 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+	
+	
+	
+func combineMap(map0,map1): 
+	print("Combine")
+	print(map0)
+	print(map1)
 
+
+#interates through the map layer provided and defines each tile
 func buildMap(tilemap:TileMapLayer, layer):
-	print(layer)
-	print(tilemap)
+	print("build map running")
 	var usedCells = tilemap.get_used_cells()
 	var count = 0
 	var map = []
 	for cell in usedCells:
-		#print(cell)
+
 		var atlasCords = tilemap.get_cell_atlas_coords(cell)
 		
 		var mapDetail = [cell,MapFunctions.findAtlas(atlasCords)]
@@ -28,5 +37,5 @@ func buildMap(tilemap:TileMapLayer, layer):
 
 		count = count+1
 		
-	print(map)
+
 	return map
