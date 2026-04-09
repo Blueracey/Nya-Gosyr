@@ -3,15 +3,6 @@ extends TileMapLayer
 #global variable which contains map tile information 
 var mapData = []
 
-
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-	
-	
 	# Combine maps takes two lists that contain a series of Vector Coodinates and Map values and 
 	# adds them together into a single list then pushes the combined list into a global variable 
 	# The resulting list will be no longer than the original it combines based on 
@@ -19,7 +10,6 @@ func _process(delta: float) -> void:
 	# map 0 is the bottom layer map 1 the not layer
 func combineMap(map0,map1): 
 
-	print("Combine")
 
 	#if this variable is True that means the current loop interation resulted in a match
 	var isCombine = false
@@ -57,7 +47,7 @@ func combineMap(map0,map1):
 
 #interates through the map layer provided and defines each tile
 func buildMap(tilemap:TileMapLayer, layer):
-	print("build map running")
+
 	#get's all the cells with a value in the map
 	var usedCells = tilemap.get_used_cells()
 	
@@ -72,10 +62,4 @@ func buildMap(tilemap:TileMapLayer, layer):
 		#calls a function that defines the resourses each type of tile can have 
 		var mapDetail = [cell,MapFunctions.findAtlas(atlasCords)]
 		map.append(mapDetail)
-
-		
-
-
-		
-
 	return map
