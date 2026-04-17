@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[node name="Node2D" type="Node2D" unique_id=1979731952]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1507221770]

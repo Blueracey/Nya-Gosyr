@@ -3,9 +3,7 @@ extends TileMapLayer
 
 
 
-#func _ready():
-	#GameState.buildMap(self, 0)
-	
+
 
 
 func _input(event):
@@ -15,13 +13,13 @@ func _input(event):
 
 
 			#get's the coordinates of the click 
-			var pos_clicked = local_to_map(to_local(global_clicked))
+			var pos_clicked = $'../TileMapGround'.local_to_map(global_clicked)
 
 			#takes the coordinates of the click and checks what tile type is there 
 			var pos_clicked_type = get_cell_atlas_coords(pos_clicked) 
 
 			
 			
-			print(randi() %25)
+			
 
-			#print(str(pos_clicked) + " " + str(pos_clicked_type))
+			print(str(pos_clicked) + " " + str(pos_clicked_type))
