@@ -2,6 +2,13 @@ extends TileMapLayer
 
 #global variable which contains map tile information 
 var mapData = []
+var indicatorPosition = Vector2(0,0)
+
+#Updates which Tile map is selected by the player
+#moving the inidicator is done in the SelectionIndicator Script 
+func updateIndicatorPosition(Position):
+	indicatorPosition = Position
+
 
 	# Combine maps takes two lists that contain a series of Vector Coodinates and Map values and 
 	# adds them together into a single list then pushes the combined list into a global variable 
@@ -63,3 +70,7 @@ func buildMap(tilemap:TileMapLayer, layer):
 		var mapDetail = [cell,MapFunctions.findAtlas(atlasCords)]
 		map.append(mapDetail)
 	return map
+	
+	
+	
+	
